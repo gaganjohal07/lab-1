@@ -14,6 +14,28 @@
   <link rel="manifest" href="site.webmanifest">
 
   <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 8px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
   <title>My Project</title>
 </head>
 
@@ -36,6 +58,40 @@
       <p>I enjoy learning new technologies and improving my coding skills every day.</p>
 
       <h2>My Favourite Things</h2>
+
+      <table>
+        <caption>Table 1. Current Courses</caption>
+        <thead>
+          <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Credits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COMP101</td>
+            <td>Intro to Computer Science</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>COMP202</td>
+            <td>Web Development</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>MATH150</td>
+            <td>Calculus I</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2" style="text-align: right;">Total Credits</td>
+            <td>10</td>
+          </tr>
+        </tfoot>
+      </table>
 
       <h3>Game</h3>
       <ol>
