@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gagandeep Singh">
+  <meta name="description" content="Personal website of Gagandeep Singh, a student at Sault College.">
+
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 8px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+  <title>Survey form </title>
+</head>
+
+<body>
+  <div class="width-wrap">
+    <header id="top">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+         <div>
+            <h1>Survey</h1>
+            <form action="https://formspree.io/f/mldpjkvj" method="POST">
+                <p>
+                    <label for="name_field">What is your name? <span aria-hidden="true" style="color:red">*</span><span class="sr-only">required</span></label>
+                    <input type="text" id="name_field" name="name_field" required />
+                </p>
+                <p>
+                    <label for="email_field">What is your email? <span aria-hidden="true" style="color:red">*</span><span class="sr-only">required</span></label>
+                    <input type="email" id="email_field" name="email_field" required />
+                </p>
+                <p>
+                    <label for="best_whole_number">Which whole number is best?</label>
+                    <input type="number" id="best_whole_number" name="best_whole_number" min="1" step="1" />
+                </p>
+                <p>
+                    <label for="best_day">Which day is best?</label>
+                    <input type="date" id="best_day" name="best_day" />
+                </p>
+                <p>
+                    <label for="best_bear">Which bear is best? <span aria-hidden="true" style="color:red">*</span><span class="sr-only">required</span></label>
+                    <select id="best_bear" name="best_bear" required>
+                        <option value="">&nbsp;</option>
+                        <option value="black">Black</option>
+                        <option value="brown">Brown</option>
+                        <option value="care">Care</option>
+                        <option value="panda">Panda</option>
+                        <option value="polar">Polar</option>
+                        <option value="teddy">Teddy</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Do you like radio buttons?</legend>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li>
+                            <input type="radio" id="enjoys_radio_buttons_yes" name="enjoys_radio_buttons" value="yes" />
+                            <label for="enjoys_radio_buttons_yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="enjoys_radio_buttons_no" name="enjoys_radio_buttons" value="no" />
+                            <label for="enjoys_radio_buttons_no">No</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="enjoys_radio_buttons_none" name="enjoys_radio_buttons" value="?" checked />
+                            <label for="enjoys_radio_buttons_none">None of your business (?)</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>
+                    <label for="life_meaning">What is the meaning of life?</label><br />
+                    <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+      <hr>
+      <blockquote>
+        “The only way to do great work is to love what you do.”
+      </blockquote>
+      <cite><span class="author">Steve Jobs</span></cite>
+      <p>
+        &copy; 2021
+        <a href="mailto:gagandeep@example.com?subject=Message%20from%20CSD112%20Website">
+          Gagandeep Singh
+        </a>
+      </p>
+    </footer>
+
+    <a href="#top" title="Back to top">◤</a>
+  </div>
+</body>
+
+</html>
