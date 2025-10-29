@@ -6,39 +6,145 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Gagandeep Singh">
   <meta name="description" content="Personal website of Gagandeep Singh, a student at Sault College.">
-
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/normalize.css">
-  
-
-
+  <link rel="stylesheet" href="styles/main.css">
   <style>
-    table {
-      border-collapse: collapse;
-      width: 100%;
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.3;
+      margin: 0;
+      padding: 0;
     }
 
-    th, td {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Merriweather', serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0044cc;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ol {
+      list-style-type: upper-roman;
+    }
+
+    iframe {
+      border-top-right-radius: 2em;
+      border-bottom-left-radius: 2em;
+    }
+
+    header nav {
+      background: #333;
+      text-align: center;
+      padding: 1em;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    header nav li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    header nav a {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: none;
+      color: #ffdd00;
+    }
+
+    h1 {
+      background: linear-gradient(to right, #ff6b6b, #5f27cd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-top: 1em;
+    }
+
+    .bio {
+      column-count: 3;
+      column-gap: 2em;
+      margin: 2em;
+    }
+
+    .bio table {
+      column-span: all;
+      margin-top: 1em;
+      border-collapse: collapse;
+      width: 100%;
+      caption-side: bottom;
+    }
+
+    .bio th,
+    .bio td {
       border: 2px solid #e13e0d;
       padding: 8px;
       text-align: left;
     }
 
-    caption {
+    .bio caption {
       font-weight: bold;
       margin-bottom: 10px;
     }
 
-    tfoot td {
+    .bio tfoot td {
       font-weight: bold;
     }
-  </style>
 
+    img {
+      max-width: 100%;
+    }
+
+    #myPhoto {
+      padding: 2%;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      font-size: 75%;
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 1em 0;
+    }
+
+    footer a {
+      color: #ffdd00;
+      text-shadow: 1px 1px 2px black;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+    }
+  </style>
   <title>My Project</title>
 </head>
 
@@ -56,47 +162,46 @@
 
     <main>
       <h1>Welcome to Gagandeep’s Website!</h1>
-      <img src="images/CRICKET.jpeg" alt="Indian Cricket Team Logo">
-      <p>Hi, my name is Gagandeep Singh and I am a student of Sault College.</p>
-      <p>I enjoy learning new technologies and improving my coding skills every day.</p>
+      <div class="bio">
+        <img id="myPhoto" src="images/CRICKET.jpeg" alt="Indian Cricket Team Logo">
+        <p>Hi, my name is Gagandeep Singh and I am a student of Sault College.</p>
+        <p>I enjoy learning new technologies and improving my coding skills every day.</p>
+        <table>
+          <caption>Table 1. Current Courses</caption>
+          <thead>
+            <tr>
+              <th>Course Code</th>
+              <th>Course Name</th>
+              <th>Credits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>COMP101</td>
+              <td>Intro to Computer Science</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>COMP202</td>
+              <td>Web Development</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>MATH150</td>
+              <td>Calculus I</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2" style="text-align: right;">Total Credits</td>
+              <td>10</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
 
       <h2>My Favourite Things</h2>
-
-      <table>
-        <caption>Table 1. Current Courses</caption>
-        <thead>
-          <tr>
-            <th>Course Code</th>
-            <th>Course Name</th>
-            <th>Credits</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>COMP101</td>
-            <td>Intro to Computer Science</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>COMP202</td>
-            <td>Web Development</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>MATH150</td>
-            <td>Calculus I</td>
-            <td>3</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="2" style="text-align: right;">Total Credits</td>
-            <td>10</td>
-          </tr>
-        </tfoot>
-      </table>
-
-      <h3>Game</h3>
       <ol>
         <li>The God of Indian Cricket: Sachin Tendulkar</li>
         <li>The King of Indian Cricket: Virat Kohli</li>
@@ -119,14 +224,13 @@
       </blockquote>
       <cite><span class="author">Steve Jobs</span></cite>
       <p>
-        &copy; 2021
+        &copy; 2025
         <a href="mailto:gagandeep@example.com?subject=Message%20from%20CSD112%20Website">
           Gagandeep Singh
         </a>
       </p>
+      <p><a href="#top" title="Back to top" class="back-to-top">◤</a></p>
     </footer>
-
-    <a href="#top" title="Back to top">◤</a>
   </div>
 </body>
 
