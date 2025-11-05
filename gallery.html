@@ -75,6 +75,7 @@
     }
 
     header nav a:hover {
+      text-decoration: none;
       color: #ffdd00;
     }
 
@@ -120,27 +121,10 @@
       max-width: 100%;
     }
 
-    .bio a {
-      display: block;
-      position: relative;
-    }
-
     #myPhoto {
       padding: 2%;
       background: white;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-    .paperclip {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 20%;
-      background: none;
-      box-shadow: none;
     }
 
     footer {
@@ -176,72 +160,73 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Welcome to Gagandeep’s Website!</h1>
-      <div class="bio">
-        <a href="images/CRICKET.jpeg">
-          <img id="myPhoto" src="images/CRICKET.jpeg" alt="Indian Cricket Team Logo">
-          <img src="images/paperclip.png" alt="Paperclip" class="paperclip">
-        </a>
-        <p>Hi, my name is Gagandeep Singh and I am a student of Sault College.</p>
-        <p>I enjoy learning new technologies and improving my coding skills every day.</p>
-        <table>
-          <caption>Table 1. Current Courses</caption>
-          <thead>
-            <tr>
-              <th>Course Code</th>
-              <th>Course Name</th>
-              <th>Credits</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>COMP101</td>
-              <td>Intro to Computer Science</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>COMP202</td>
-              <td>Web Development</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>MATH150</td>
-              <td>Calculus I</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2" style="text-align: right;">Total Credits</td>
-              <td>10</td>
-            </tr>
-          </tfoot>
-        </table>
-      </div>
+   <main class="width-wrap">
+  <h1>Gallery</h1>
+  <div class="gallery">
+    <!-- 1st image (tall) -->
+    <a href="https://loremflickr.com/1024/1024/?lock=50" class="row-span-2">
+      <img src="https://loremflickr.com/300/600?lock=50" alt="Gallery Image 1">
+    </a>
 
-      <h2>My Favourite Things</h2>
-      <ol>
-        <li>The God of Indian Cricket: Sachin Tendulkar</li>
-        <li>The King of Indian Cricket: Virat Kohli</li>
-        <li>The Prince of Indian Cricket: Shubman Gill</li>
-      </ol>
+    <a href="https://loremflickr.com/1024/1024/?lock=51">
+      <img src="https://loremflickr.com/300/300?lock=51" alt="Gallery Image 2">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=52">
+      <img src="https://loremflickr.com/300/300?lock=52" alt="Gallery Image 3">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=53">
+      <img src="https://loremflickr.com/300/300?lock=53" alt="Gallery Image 4">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=54">
+      <img src="https://loremflickr.com/300/300?lock=54" alt="Gallery Image 5">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=55">
+      <img src="https://loremflickr.com/300/300?lock=55" alt="Gallery Image 6">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=56">
+      <img src="https://loremflickr.com/300/300?lock=56" alt="Gallery Image 7">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=57">
+      <img src="https://loremflickr.com/300/300?lock=57" alt="Gallery Image 8">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=58">
+      <img src="https://loremflickr.com/300/300?lock=58" alt="Gallery Image 9">
+    </a>
 
-      <h3>Haiku</h3>
-      <p>
-        An old silent pond<br>
-        A frog jumps into the pond<br>
-        Splash! Silence again.<br>
-        — Matsuo Bashō
-      </p>
-    </main>
+    <!-- 10th image (large square, spans 2x2) -->
+    <a href="https://loremflickr.com/1024/1024/?lock=59" class="row-span-2 col-span-2">
+      <img src="https://loremflickr.com/600/600?lock=59" alt="Gallery Image 10">
+    </a>
+
+    <a href="https://loremflickr.com/1024/1024/?lock=60">
+      <img src="https://loremflickr.com/300/300?lock=60" alt="Gallery Image 11">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=61">
+      <img src="https://loremflickr.com/300/300?lock=61" alt="Gallery Image 12">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=62">
+      <img src="https://loremflickr.com/300/300?lock=62" alt="Gallery Image 13">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=63">
+      <img src="https://loremflickr.com/300/300?lock=63" alt="Gallery Image 14">
+    </a>
+    <a href="https://loremflickr.com/1024/1024/?lock=64">
+      <img src="https://loremflickr.com/300/300?lock=64" alt="Gallery Image 15">
+    </a>
+  </div>
+</main>
 
     <footer>
       <hr>
-      <blockquote>“The only way to do great work is to love what you do.”</blockquote>
+      <blockquote>
+        “The only way to do great work is to love what you do.”
+      </blockquote>
       <cite><span class="author">Steve Jobs</span></cite>
-      <p>&copy; 2025
-        <a href="mailto:gagandeep@example.com?subject=Message%20from%20CSD112%20Website">Gagandeep Singh</a>
+      <p>
+        &copy; 2025
+        <a href="mailto:gagandeep@example.com?subject=Message%20from%20CSD112%20Website">
+          Gagandeep Singh
+        </a>
       </p>
       <p><a href="#top" title="Back to top" class="back-to-top">◤</a></p>
     </footer>

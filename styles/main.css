@@ -67,10 +67,9 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
-}
-
-header nav ul li {
-  display: inline;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li a {
@@ -220,4 +219,105 @@ ul.radio-list {
 
 ul.radio-list li {
   list-style-type: none;
+}
+
+.favourites > label + div {
+  display: none;
+  width: 100%;
+}
+
+.favourites > input:checked + label + div {
+  display: block;
+}
+
+.favourites > input[type="radio"] {
+  display: none;
+}
+
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1em;
+}
+
+.favourites > label {
+  order: -1;
+}
+
+.favourites > label {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: 2px solid transparent;
+  border-radius: 6px 6px 0 0;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.favourites > label:hover {
+  background-color: #e0f2f1;
+  border-color: #00796b;
+}
+
+.favourites > input:checked + label {
+  background-color: #00796b;
+  color: #fff;
+  border-color: #004d40;
+  border-bottom: 3px solid #004d40;
+}
+
+.favourites > label + div {
+  background-color: #fafafa;
+  border: 2px solid #ccc;
+  border-radius: 0 6px 6px 6px;
+  padding: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.favourites > input:checked + label + div {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery a {
+  transition: transform 0.3s ease;
+}
+
+.gallery a:hover {
+  transform: scale(1.1);
+}
+
+.gallery .row-span-2 {
+  grid-row: span 2;
+}
+
+.gallery .col-span-2 {
+  grid-column: span 2;
 }
