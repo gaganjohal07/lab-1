@@ -321,3 +321,15 @@ ul.radio-list li {
 .gallery .col-span-2 {
   grid-column: span 2;
 }
+#back-to-top {
+  margin-left: -25px;       
+  position: sticky;         /
+  bottom: 10px;           
+  display: inline-block;   
+  transition: transform 0.3s ease; 
+  z-index: 1000;            
+}
+
+#back-to-top:hover {
+  transform: rotate(45deg);
+}
