@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Gagandeep Singh">
-  <meta name="description" content="Personal website of Gagandeep Singh, a student at Sault College.">
+  <meta name="description" content="Lorem Ipsum page for layout testing by Gagandeep Singh.">
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
 
   <style>
@@ -20,7 +21,12 @@
       padding: 0;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1 {
+      text-align: center;
+      margin-top: 1em;
+      background: linear-gradient(to right, #ff6b6b, #5f27cd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-family: 'Merriweather', serif;
     }
 
@@ -37,6 +43,16 @@
       max-width: 100%;
       height: auto;
       display: block;
+    }
+
+    .float-left {
+      float: left;
+      margin: 1em;
+    }
+
+    .float-right {
+      float: right;
+      margin: 1em;
     }
 
     header nav {
@@ -78,32 +94,13 @@
       display: none;
     }
 
-    h1 {
-      text-align: center;
-      margin-top: 1em;
-      background: linear-gradient(to right, #ff6b6b, #5f27cd);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    dl {
-      margin: 2em;
-      font-size: 1.1em;
-      line-height: 1.5;
-    }
-
-    dt {
-      font-weight: bold;
-      margin-top: 1em;
-      color: #333;
-    }
-
     footer {
       font-size: 75%;
       text-align: center;
       background: #222;
       color: white;
       padding: 1em 0;
+      clear: both;
     }
 
     footer a {
@@ -113,13 +110,12 @@
     }
 
     .back-to-top {
-      display: inline-block;
-      text-decoration: none;
-      transition: transform 200ms ease;
-      font-size: 2rem;
-      margin: 1rem auto;
       display: block;
       text-align: center;
+      font-size: 2rem;
+      margin: 1rem auto;
+      text-decoration: none;
+      transition: transform 200ms ease;
     }
 
     .back-to-top:hover {
@@ -147,13 +143,8 @@
         left: 0;
       }
 
-      .sandwich-icon::before {
-        top: 5px;
-      }
-
-      .sandwich-icon::after {
-        top: 15px;
-      }
+      .sandwich-icon::before { top: 5px; }
+      .sandwich-icon::after { top: 15px; }
 
       header nav ul {
         flex-direction: column;
@@ -178,9 +169,18 @@
         height: 12rem;
       }
     }
+
+    @media (max-width: 650px) {
+      .float-left,
+      .float-right {
+        float: none;
+        display: block;
+        margin: 1em auto;
+      }
+    }
   </style>
 
-  <title>Glossary</title>
+  <title>Lorem Ipsum</title>
 </head>
 
 <body>
@@ -199,34 +199,29 @@
     </header>
 
     <main>
-      <h1>Glossary</h1>
+      <h1>Lorem Ipsum</h1>
 
-      <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language – the standard language used to create web pages.</dd>
+      <p>
+        <img src="https://loremflickr.com/320/240/nature" alt="Nature" class="float-right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+      </p>
 
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheets – used to style and layout HTML elements on a web page.</dd>
+      <p>
+        <img src="https://loremflickr.com/320/240/city" alt="City" class="float-left">
+        Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.
+      </p>
 
-        <dt>ART DIRECTION</dt>
-        <dd>Constructing HTML so that different images are used at different screen sizes is known as art direction.</dd>
-
-        <dt>SVG Image</dt>
-        <dd>SVG, or Scalable Vector Graphics, is an XML format for describing vector images.</dd>
-
-        <dt>CAPTION</dt>
-        <dd>Captions provide transcription of audio for those who cannot hear.</dd>
-      </dl>
+      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+      <p>Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.</p>
     </main>
 
     <footer>
       <hr>
       <blockquote>“The only way to do great work is to love what you do.”</blockquote>
       <cite><span class="author">Steve Jobs</span></cite>
-      <p>&copy; 2021 <a href="mailto:gagandeep@example.com?subject=Message from CSD112 Website">Gagandeep Singh</a></p>
+      <p>&copy; 2025 <a href="mailto:gagandeep@example.com">Gagandeep Singh</a></p>
+      <a href="#top" class="back-to-top">◤</a>
     </footer>
-
-    <a href="#top" class="back-to-top">◤</a>
   </div>
 </body>
 </html>
